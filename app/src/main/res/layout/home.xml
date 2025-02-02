@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:heightSum="100"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="13"
+        android:orientation="horizontal"
+        >
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_width="0dp"/>
+
+        <Button
+            android:id="@+id/lastMonth"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:text="<"
+            android:textSize="40sp"
+            />
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_width="0dp"/>
+        <View
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_width="0dp"/>
+
+        <TextView
+            android:text="xx"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="14"
+            />
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_width="0dp"/>
+
+        <TextView
+            android:text="月"
+            android:textSize="20sp"
+            android:gravity="bottom"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            />
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_width="0dp"/>
+
+        <TextView
+            android:text="支出"
+            android:textSize="20sp"
+            android:gravity="right|center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="12"
+            />
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_width="0dp"/>
+
+        <TextView
+            android:text="xx"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            />
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_width="0dp"/>
+
+        <TextView
+            android:text="円"
+            android:textSize="20sp"
+            android:gravity="bottom"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            />
+        <View
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_width="0dp"/>
+        <View
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_width="0dp"/>
+
+        <Button
+            android:id="@+id/nextMonth"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:text=">"
+            android:textSize="40sp"
+            />
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_width="0dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        >
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_weight="14"
+            android:layout_width="0dp"/>
+        <TextView
+            android:text="xxさん"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            />
+        <TextView
+            android:text="→"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            />
+        <TextView
+            android:text="xxさん"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            />
+        <View
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:layout_width="0dp"/>
+        <TextView
+            android:text="xx"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="15"
+            />
+
+
+        <TextView
+            android:text="円"
+            android:textSize="20sp"
+            android:gravity="bottom"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            />
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_weight="14"
+            android:layout_width="0dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:orientation="horizontal"
+        >
+        <View
+            android:layout_height="match_parent"
+            android:layout_weight="14"
+            android:layout_width="0dp"/>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/expenditureRatio"
+            android:layout_width="0dp"
+            android:layout_weight="72"
+            android:layout_height="match_parent"
+            />
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_weight="14"
+            android:layout_width="0dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        >
+        <View
+            android:layout_height="match_parent"
+            android:layout_weight="14"
+            android:layout_width="0dp"/>
+        <Button
+            android:id="@+id/homeScreen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:text="ホーム"
+            android:textSize="10sp"
+            />
+        <View
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:layout_width="0dp"/>
+        <Button
+            android:id="@+id/calendarScreen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:text="カレンダー"
+            android:textSize="10sp"
+            />
+        <View
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:layout_width="0dp"/>
+        <Button
+            android:id="@+id/rateScreen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:text="分担"
+            android:textSize="10sp"
+            />
+        <View
+            android:layout_height="match_parent"
+            android:layout_weight="14"
+            android:layout_width="0dp"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
