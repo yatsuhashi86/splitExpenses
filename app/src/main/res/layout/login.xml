@@ -2,7 +2,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:heightSum="8"
     android:orientation="vertical">
 
     <View
@@ -34,7 +33,7 @@
         android:layout_weight="1"
         android:layout_margin="30dp"
         android:text="続きから"
-
+        android:onClick="continueButtonOnClick"
         />
 
     <View
