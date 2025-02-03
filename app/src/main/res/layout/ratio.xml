@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        >
+        <View
+            android:layout_height="match_parent"
+            android:layout_weight="14"
+            android:layout_width="0dp"/>
+        <Button
+            android:id="@+id/homeScreen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:text="ホーム"
+            android:textSize="10sp"
+            android:onClick="continueButtonOnClick"
+            />
+        <View
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:layout_width="0dp"/>
+        <Button
+            android:id="@+id/calendarScreen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:text="カレンダー"
+            android:textSize="10sp"
+            android:onClick="calenderButtonOnClick"
+            />
+        <View
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:layout_width="0dp"/>
+        <Button
+            android:id="@+id/rateScreen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:text="分担"
+            android:textSize="10sp"
+            android:onClick="ratioButtonOnClick"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="14"
+            android:text="+"
+            android:textSize="40sp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
