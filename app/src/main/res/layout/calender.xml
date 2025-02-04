@@ -226,7 +226,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="31"
+        android:layout_weight="37"
         >
 
         <LinearLayout
@@ -234,6 +234,9 @@
             android:layout_height="0dp"
             android:orientation="vertical"
             >
+
+
+
 
         </LinearLayout>
 
@@ -258,7 +261,6 @@
             android:layout_weight="20"
             android:text="ホーム"
             android:textSize="10sp"
-            android:onClick="continueButtonOnClick"
             />
         <View
             android:layout_height="match_parent"
@@ -271,7 +273,6 @@
             android:layout_weight="20"
             android:text="カレンダー"
             android:textSize="10sp"
-            android:onClick="calenderButtonOnClick"
             />
         <View
             android:layout_height="match_parent"
@@ -284,7 +285,6 @@
             android:layout_weight="20"
             android:text="分担"
             android:textSize="10sp"
-            android:onClick="ratioButtonOnClick"
             />
         <Button
             android:layout_width="0dp"
