@@ -24,7 +24,7 @@ class MainActivity : ComponentActivity() {
     }
 
     fun inputTradingButtonOnClick(view: View){
-
+        setContentView(R.layout.trading)
     }
 
 }
