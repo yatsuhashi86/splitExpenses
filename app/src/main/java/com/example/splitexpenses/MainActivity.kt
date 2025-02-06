@@ -12,6 +12,7 @@ class MainActivity : ComponentActivity() {
 
     fun continueButtonOnClick(view: View){
         setContentView(R.layout.home)
+
     }
 
     fun calenderButtonOnClick(view: View){
@@ -20,6 +21,10 @@ class MainActivity : ComponentActivity() {
 
     fun ratioButtonOnClick(view: View){
         setContentView(R.layout.ratio)
+    }
+
+    fun inputTradingButtonOnClick(view: View){
+
     }
 
 }
