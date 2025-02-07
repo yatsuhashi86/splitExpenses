@@ -2,6 +2,7 @@ package com.example.splitexpenses
 
 import android.os.Bundle
 import android.view.View
+import android.widget.EditText
 import androidx.activity.ComponentActivity
 
 class MainActivity : ComponentActivity() {
@@ -12,7 +13,6 @@ class MainActivity : ComponentActivity() {
 
     fun continueButtonOnClick(view: View){
         setContentView(R.layout.home)
-
     }
 
     fun calenderButtonOnClick(view: View){
@@ -27,5 +27,9 @@ class MainActivity : ComponentActivity() {
         setContentView(R.layout.trading)
     }
 
+    fun enterPurchaseButtonOnClick(view: View){
+
+        setContentView(R.layout.debug)
+    }
 }
 

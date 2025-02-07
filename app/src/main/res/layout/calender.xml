@@ -585,6 +585,7 @@
             android:layout_weight="14"
             android:text="+"
             android:textSize="40sp"
+            android:onClick="inputTradingButtonOnClick"
             />
 
     </LinearLayout>

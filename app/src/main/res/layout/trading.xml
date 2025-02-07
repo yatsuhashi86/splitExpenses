@@ -7,7 +7,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="10"
+        android:layout_weight="5"
         />
 
     <LinearLayout
@@ -32,6 +32,7 @@
             android:inputType="number"
             />
         <EditText
+            android:id="@+id/price"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="50"/>
@@ -107,6 +108,7 @@
             android:layout_weight="5"/>
 
         <EditText
+            android:id="@+id/tradeDate"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="90"
@@ -139,6 +141,7 @@
             android:layout_weight="5"/>
 
         <EditText
+            android:id="@+id/tradeMemo"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="90"
@@ -181,6 +184,7 @@
             android:inputType="number"
             />
         <EditText
+            android:id="@+id/tradeRatio"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="30"/>
@@ -199,10 +203,36 @@
 
     </LinearLayout>
 
-    <View
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="10"
+        >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="90"
+            android:text="入力"
+            android:onClick="enterPurchaseButtonOnClick"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
         />
 
 </LinearLayout>
