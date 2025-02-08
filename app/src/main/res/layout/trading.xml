@@ -218,6 +218,7 @@
             android:layout_height="match_parent"
             android:layout_weight="90"
             android:text="入力"
+            android:id="@+id/input"
             android:onClick="enterPurchaseButtonOnClick"
             />
         <View
@@ -229,10 +230,11 @@
 
     </LinearLayout>
 
-    <View
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="5"
+        android:id="@+id/debug"
         />
 
 </LinearLayout>
