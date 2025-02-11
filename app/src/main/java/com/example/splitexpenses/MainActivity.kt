@@ -40,7 +40,6 @@ class MainActivity : ComponentActivity() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        //return inflater.inflate(inflater, container, false)
         _binding = TradingBinding.inflate(inflater!!, container, false)
         return binding.root
     }
