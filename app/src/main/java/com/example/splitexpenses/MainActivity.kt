@@ -33,6 +33,20 @@ class MainActivity : ComponentActivity() {
         setContentView(R.layout.login)
 
     }
+    private var _binding: TradingBinding? = null
+    private val binding get() = _binding!!
+    fun onCreateView(
+        inflater: LayoutInflater?,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        //return inflater.inflate(inflater, container, false)
+        _binding = TradingBinding.inflate(inflater!!, container, false)
+        return binding.root
+    }
+
+
+
 
     fun continueButtonOnClick(view: View){
         setContentView(R.layout.home)
@@ -52,43 +66,10 @@ class MainActivity : ComponentActivity() {
     }
     var debug = ""
 
-    var _binding: TradingBinding = null
-    private val binding get() = _binding!!
-    fun onCreateView(
-        inflater: LayoutInflater?,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        //return inflater.inflate(inflater, container, false)
-        _binding = debugOnly.inflate(inflater, container, false)
-        return binding.root
-    }
-
-    fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
-    }
 
 }
 
-class debugOnly: Fragment() {
-    var _binding: debugOnly? = null
-    private val binding get() = _binding!!
-    override fun onCreateView(
-        inflater: LayoutInflater?,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        //return inflater.inflate(inflater, container, false)
-        _binding = debugOnly.inflate(inflater, container, false)
-        return binding.root
-    }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
-    }
-}
 
 
 
